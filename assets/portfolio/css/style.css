@@ -1,0 +1,98 @@
+
+html{
+    position: relative;
+
+}
+
+body{
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.jumbotron{
+    height: 500px;
+    background-image: url(../../img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 30px;
+    color: black;
+    
+}
+
+.jumbotron img{
+    width: 200px;
+    border: 5px solid #333;
+    box-shadow: 1px 1px 10px rgba(0, 0,0, 0.5);
+}
+
+.jumbotron h1 , .jumbotron p{
+    text-shadow: 1px 1px 10px rgba(0, 0,0, 0.5);
+}
+
+
+ hr{
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section{
+    min-height: 600px;
+}
+
+.about .pKiri{
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+.pKanan{
+    opacity: 0;
+    transform: translate(50px, 0) rotate(-15deg);
+    transition: 1s;
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio{
+    background-color: #eee;
+}
+
+.portfolio .thumbnail{
+    opacity: 0;
+    transition: .5s;
+    transform: translate(0, -40px);
+}
+
+.portfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+.contact{
+    min-height: 800px;
+}
+
+#pesan{
+    resize: none;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    background-color: #333;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #aaa;
+    font-size: 1em;
+}
+footer a{
+    text-decoration: none;
+    color:  #aaa;
+}
