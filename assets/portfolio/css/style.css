@@ -83,7 +83,7 @@ footer{
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 80px;
+   
     background-color: #333;
     padding-top: 30px;
 }
@@ -96,3 +96,24 @@ footer a{
     text-decoration: none;
     color:  #aaa;
 }
+footer a:hover{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+}
+.item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    margin-bottom: 20px;
+    color: #aaa;
+    opacity: 0.75;
+  }
+  .item.social > a:hover{
+      color: white;
+  }
